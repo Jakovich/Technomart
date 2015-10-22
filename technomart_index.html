@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>Техномарт: интернет-магазин строительных материалов и инструменты</title>
 		<meta name="keywords" content="Техномарт, магазин строительных материалов, инструменты для ремонта">
+		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="main-header container clearfix">
@@ -65,28 +66,39 @@
 				</div>
 				<div class="category category-sale">
 					<p>Скидки 50%</p>
-					<a class="category-caption" href="">на 350 товаров</a>
+					<a class="category-caption" href="#">на 350 товаров</a>
 				</div>
 				<div class="category category-delivery">
 					<p>Доставка</p>
-					<a class="category-caption" href="">Доставка</a>
+					<a class="category-caption" href="#">Доставка</a>
 				</div>
-				<div class="adv-perforator">
-					<div class="perforator-title">
+				<div class="adv adv-perforator">
+					<div class="adv-title">
 						<h2>Перфораторы</h2>
 						<p>Настоящие мужские игрушки</p>
 					</div>
-					<div class="perforator-arrows">
+					<div class="arrows perforator-arrows">
 						<span class="arrows-left"></span>
 						<span class="arrows-right"></span>
 					</div>
-					<a href="" class="btn-basic">Открыть каталог</a>
+					<a href="#" class="btn-basic">Открыть каталог</a>
+				</div>
+				<div class="adv adv-drill">
+					<div class="adv-title">
+						<h2>Дрели</h2>
+						<p>Соседям на радость</p>
+					</div>
+					<div class="arrows drill-arrows"> <!-- Должен ли быть отдельный класс у дива, содрежащего стрелки переключения  второго слайдера, или можно назначить ему тот же класс, что и у первого-->
+						<span class="arrows-left"></span>
+						<span class="arrows-right"></span>
+					</div>
+					<a href="#" class="btn-basic">Открыть каталог</a>
 				</div>
 			</section>
 			<section class="popular container">
 				<header class="popular-title">
-					<p>Популярные товары:</p>
-					<a href="" class="btn-basic">Все популярные товары</a>
+					<h2>Популярные товары:</h2>
+					<a href="#" class="btn-basic">Все популярные товары</a>
 				</header>
 				<section class="catalog-items">
 					<article class="catalog-item">
@@ -95,7 +107,7 @@
                     		<a href="#" class="btn bookmark">В закладки</a>
                 		</div>
 						<div class="image">
-							<img src="http://placehold.it/220x318" width="220" height="318" alt="Перфоратор BOSH BFG 9000">
+							<img src="img/bosh-bfg9000.jpg" width="220" height="160" alt="Перфоратор BOSH BFG 9000">
 						</div>
 						<div class="title">
 							Перфоратор BOSH BFG 9000
@@ -113,7 +125,7 @@
                     		<a href="#" class="btn bookmark">В закладки</a>
                 		</div>
 						<div class="image">
-							<img src="http://placehold.it/220x318" width="220" height="318" alt="Перфоратор BOSH BFG 3000">
+							<img src="img/bosh-bfg3000.jpg" width="220" height="160" alt="Перфоратор BOSH BFG 3000">
 						</div>
 						<div class="title">
 							Перфоратор BOSH BFG 3000
@@ -131,7 +143,7 @@
                     		<a href="#" class="btn bookmark">В закладки</a>
                 		</div>
 						<div class="image">
-							<img src="http://placehold.it/220x318" width="220" height="318" alt="Перфоратор BOSH BFG 6000">
+							<img src="img/bosh-bfg6000.jpg" width="220" height="160" alt="Перфоратор BOSH BFG 6000">
 						</div>
 						<div class="title">
 							Перфоратор BOSH BFG 6000
@@ -150,7 +162,7 @@
                     		<a href="#" class="btn bookmark">В закладки</a>
                 		</div>
 						<div class="image">
-							<img src="http://placehold.it/220x318" width="220" height="318" alt="Перфоратор BOSH BFG 2000">
+							<img src="img/bosh-bfg2000.jpg" width="220" height="160" alt="Перфоратор BOSH BFG 2000">
 						</div>
 						<div class="title">
 							Перфоратор BOSH BFG 2000
@@ -165,33 +177,33 @@
 			</section>
 			<section class="popular container">
 				<header class="popular-title">
-					<p>Популярные производители</p>
+					<h2>Популярные производители</h2>
 					<a href="" class="btn-basic">Все производители</a>
 				</header>
 				<div class="produser-items">
 					<div class="produser-item">
-						<a href=""><img src="http://placehold.it/220x145" width="220" height="145" alt="Bosh"></a>
+						<a href=""><img src="/img/logo-bosh.jpg" width="126" height="37" alt="Bosh"></a>
 					</div>
 					<div class="produser-item">
-						<a href=""><img src="http://placehold.it/220x145" width="220" height="145" alt="Makita"></a>
+						<a href=""><img src="img/logo-makita.jpg" width="123" height="40" alt="Makita"></a>
 					</div>
 					<div class="produser-item">
-						<a href=""><img src="http://placehold.it/220x145" width="220" height="145" alt="DeWALT"></a>
+						<a href=""><img src="img/logo-dewalt.jpg" width="146" height="44" alt="DeWALT"></a>
 					</div>
 					<div class="produser-item">
-						<a href=""><img src="http://placehold.it/220x145" width="220" height="145" alt="Интерскол"></a>
+						<a href=""><img src="img/logo-interscol.jpg" width="200" height="88" alt="Интерскол"></a>
 					</div>
 					<div class="produser-item">
-						<a href=""><img src="http://placehold.it/220x145" width="220" height="145" alt="Hitachi"></a>
+						<a href=""><img src="img/logo-hitachi.jpg" width="169" height="31" alt="Hitachi"></a>
 					</div>
 					<div class="produser-item">
-						<a href=""><img src="http://placehold.it/220x145" width="220" height="145" alt="LG"></a>
+						<a href=""><img src="img/logo-lg.jpg" width="121" height="73" alt="LG"></a>
 					</div>
 					<div class="produser-item">
-						<a href=""><img src="http://placehold.it/220x145" width="220" height="145" alt="AEG"></a>
+						<a href=""><img src="img/logo-aeg.jpg" width="151" height="96" alt="AEG"></a>
 					</div>
 					<div class="produser-item">
-						<a href=""><img src="http://placehold.it/220x145" width="220" height="145" alt="Metabo"></a>
+						<a href=""><img src="img/logo-metabo.jpg" width="200" height="69" alt="Metabo"></a>
 					</div>
 				</div>
 			</section>
@@ -201,16 +213,44 @@
 					<p>Хороший интернет-магазин отличается от плохого не только ценами!</p> 
 					<p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными</p>
 				</section>
-				<section class="services-select">
+				<div class="service-item">
+					<section class="services-select">
 					<a href="" class="active">Доставка</a>
 					<a href="" >Гарантия</a>
 					<a href="">Кредит</a>
 				</section>
-				<section class="delivery">
-					<h2 class="delivery-title">Доставка</h2>
+					<section class="service-description">
+					<h2 class="service-title">Доставка</h2>
 					<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
 					<p>Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
 				</section>
+				</div>
+				<div class="service-item">
+					<section class="services-select">
+					<a href="#">Доставка</a>
+					<a href="#" class="active">Гарантия</a>
+					<a href="#">Кредит</a>
+				</section>
+					<section class="service-description">
+					<h2 class="service-title">Гарантия</h2>
+					<p>Если купленный у нас товар поломается или заискрит, 
+а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. </p>
+					<p>Дом уж восстановите как-нибудь сами.</p>
+				</section>
+				</div>
+				<div class="service-item">
+					<section class="services-select">
+					<a href="#">Доставка</a>
+					<a href="#">Гарантия</a>
+					<a href="#"  class="active">Кредит</a>
+					</section>
+					<section class="service-description">
+					<h2 class="service-title">Кредит</h2>
+					<p>Залезть в долговую яму стало проще!  </p>
+					<p>Кредитные консультанты придут вам на помощь.</p>
+					<a href="#" class="btn-basic">Отправить заявку</a>
+				</section>
+				</div>
 			</section>
 			<section class="company container">
 				<section class="about-company">
@@ -226,7 +266,7 @@
 				<section class="contacts">
 						<h2>Контакты</h2>
 						<p>Вы можете забрать товар сами, заехав в наш офис:</p>
-						<img src="http://placehold.it/300x158" width="300" height="158" alt="Карта с местоположением офиса">
+						<img src="img/map.jpg" width="300" height="158" alt="Карта с местоположением офиса">
 						<a href="" class="btn-dasic">Заблудились? Напишите нам!</a>			
 				</section>
 			</section>
