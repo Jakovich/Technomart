@@ -4,7 +4,10 @@ body{
 	color: #000000;
 	line-height: 24px;
 }
-
+.container{
+	width: 940px;
+	margin: auto;
+}
 h2{
 	font-family: "Cuprum";
 	font-size: 30px;
@@ -20,5 +23,298 @@ h2.service-title{
 	font-size: 36px;
 	color: #32425c;
 }
+/*_______________________________*/
+/*header-main*/
+
+/*first row*/
+
+.logo{
+	float: left;
+	width: 220px;
+	text-align: center;
+}
+.info-block{
+	float: left;
+	width: 150px;
+}
+.search{
+	float: left;
+	width: 270px;
+}
+.order{
+	float: right;
+	width: 150px;
+	text-align: center;
+}
+/*second-row*/
+.header-second-row{
+	padding: 40px 0;
+}
+.description{
+	width: 200px;
+	padding: 0 50px;
+	margin-right: 20px;
+	float: left;
+
+}
+.contacts{
+	width: 300px;
+	margin-right: 20px;
+	float:left;
+}
+.user-block{
+	width: 281px;
+	padding-left: 19px;
+	float: right;
+}
+/*main-navigation*/
+.main-navigation{
+	margin-bottom: 60px;
+}
+ul.main-menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 0;
+}
+.main-menu li{
+	font-size: 17px;
+	display: inline-block;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+/*footer*/
+/*first-row*/
+.footer-first-row{
+	margin-bottom: 30px;
+}
+.footer-menu{
+	float: right;
+}
+ul.footer-menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.footer-menu li{
+	display: inline-block;
+	margin-left: 60px;
+}
+/*second-row*/
+.footer-contacts{
+	float: left;
+	width: 330px;
+}
+
+/*third-row*/
+.footer-copyright{
+	float: left;
+	margin-right: 160px;
+}
+.footer-social{
+	float: left;
+	margin-right: 120px;
+}
+.footer-email{
+	float: left;
+	width: 140px;
+}
+.footer-develop{
+	float: right;
+	width: 110px;
+}
+
+
+/*_______________________________*/
+/*technomart-index*/
+
+/*categoires*/
+.categories{
+	margin-top: 60px;
+}
+.category{
+	float: left;
+	width: 300px;
+	height: 123px;
+	margin-bottom: 20px;
+	
+}
+.category:nth-child(1),
+.category:nth-child(2){
+	margin-right: 20px;
+}
+.adv {
+	float: left;
+	width: 620px;
+	height: 265px;
+	margin-right: 20px;
+}
+.adv-drill{
+	display: none;
+}
+
+/*popular-items*/
+.popular-title{
+
+}
+.popular-title h2{
+float: left;
+}
+.popular-title a{
+float: right;
+}
+
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.catalog-item{
+	float: left;
+	margin-right: 20px;
+}
+.catalog-item:last-child{
+	margin-right: 0;
+}
+
+
+/*popular-produser*/
+
+.produser-item{
+	width: 220px;
+	height: 145px;
+	float: left;
+	margin-left: 20px;
+	position: relative;
+}
+.produser-item img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.produser-item:nth-child(4n){
+	margin-left: 0;
+}
+
+/*services*/
+.services-select{
+	width: 220px;
+	float: left;
+}
+.service-description{
+	float: right;
+	width: 630px;
+}
+.service-description h2{
+	float: right;
+	width: 630px;
+	margin-top: 0;
+}
+.services-select a{
+	padding-left: 20px;
+	margin-right: 80px;
+}
+
+/*company*/
+.about-company{
+	float: left;
+	width: 540px;
+}
+.about-company .contacts{
+	float: right;
+	width: 300px;
+}
+
+/*popupwindow*/
+
+.write-us-form{
+	clear: both;
+	width: 460px;
+	padding-left: 80px;
+	padding-right: 80px;
+	
+}
+
+.letter{
+	width: 460px;
+}
+.form-left-column,
+.form-right-column {
+	display: inline-block;
+}
+.button-form {
+width: 460px;
+}
+
+/*technomart-catalog*/
+/*header*/
+.login {
+	width: 300px;
+}
+ul.personal-menu{
+	list-style: none;
+	padding:0;
+}
+.personal-menu li{
+	display: inline-block;
+}
+
+/*breadcrumbs*/
+ul.breadcrumbs-menu{
+	list-style: none;
+	font-size: 0;
+	padding: 0;
+}
+.breadcrumbs-menu li{
+	font-size: 13px;
+	display: inline-block;
+	margin-right: 35px;
+}
+.sector-title{
+	padding: 30px 0;
+}
+
+.left-column{
+	float: left;
+	width: 220px;
+	margin-right: 20px;
+}
+.right-column{
+	float: right;
+	width: 700px;
+}
+/*form select*/
+.select label{
+	display: block;
+}
+/*sorting*/
+.sort-title{
+	float: left;
+}
+.sort-menu{
+	float: right;
+	margin-left: 40px;
+}
+.box{
+	margin-bottom: 20px;
+}
+/*catalog-item*/
+.catalog-item:nth-child(3n)
+{
+	margin-right: 0;
+	margin-bottom: 20px;
+}
+
+/*perf-descr*/
+.perf-descr{
+	padding: 60px 0;
+}
+
+
+
+
 
 
