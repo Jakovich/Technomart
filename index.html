@@ -7,14 +7,14 @@
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
-		<header class="main-header container clearfix">
+		<header class="main-header container">
 			<section class="header-first-row clearfix"> 
 				<div class="logo">
 					<a href="">Техномарт</a>
 				</div>
-				<div class="info-block search"> 
+				<form class="info-block search"> 
 					<input type="search" name="search" placeholder="Поиск:">
-				</div>
+				</form>
 				<div class="info-block  bookmarks">
 					<a href="">Закладки: 0</a>
 				</div>
@@ -50,7 +50,7 @@
 				</ul>
 			</nav>
 		</header>
-		<section class="categories container clearfix">
+		<section class="categories container">
 			<div class="category category-material">
 				<div class="flag-new"></div>
 				<p>Материалы</p>
@@ -69,7 +69,7 @@
 					<h2>Перфораторы</h2>
 					<p>Настоящие мужские игрушки</p>
 				</div>
-				<div class="arrows perforator-arrows">
+				<div class="arrows">
 					<span class="arrows-left"></span>
 					<span class="arrows-right"></span>
 				</div>
@@ -80,7 +80,7 @@
 					<h2>Дрели</h2>
 					<p>Соседям на радость</p>
 				</div>
-				<div class="arrows drill-arrows"> <!-- Должен ли быть отдельный класс у дива, содрежащего стрелки переключения  второго слайдера, или можно назначить ему тот же класс, что и у первого-->
+				<div class="arrows"> 
 					<span class="arrows-left"></span>
 					<span class="arrows-right"></span>
 				</div>
@@ -95,7 +95,7 @@
 				<a class="category-caption" href="#">Доставка</a>
 			</div>
 		</section>
-		<section class="popular container clearfix">
+		<section class="popular container">
 			<header class="popular-title clearfix">
 				<h2>Популярные товары:</h2>
 				<a href="#" class="btn-basic">Все популярные товары</a>
@@ -106,12 +106,12 @@
                     			<a href="#" class="btn buy">Купить</a>
                     			<a href="#" class="btn bookmark">В закладки</a>
                 			</div>
-					<div class="image">
+					<div class="img-wrapper">
 						<img src="img/bosh-bfg9000.jpg" width="220" height="160" alt="Перфоратор BOSH BFG 9000">
 					</div>
-					<div class="title">
+					<h3 class="title">
 						Перфоратор BOSH BFG 9000
-					</div>
+					</h3>
 					<div class="price-ex">
 						32500 Р.
 					</div>
@@ -124,12 +124,12 @@
                     			<a href="#" class="btn buy">Купить</a>
                     			<a href="#" class="btn bookmark">В закладки</a>
                 			</div>
-					<div class="image">
+					<div class="img-wrapper">
 						<img src="img/bosh-bfg3000.jpg" width="220" height="160" alt="Перфоратор BOSH BFG 3000">
 					</div>
-					<div class="title">
+					<h3 class="title">
 						Перфоратор BOSH BFG 3000
-					</div>
+					</h3>
 					<div class="price-ex">
 						22500 Р.
 					</div>
@@ -142,12 +142,12 @@
                     			<a href="#" class="btn buy">Купить</a>
                     			<a href="#" class="btn bookmark">В закладки</a>
                 			</div>
-					<div class="image">
+					<div class="img-wrapper">
 						<img src="img/bosh-bfg6000.jpg" width="220" height="160" alt="Перфоратор BOSH BFG 6000">
 					</div>
-					<div class="title">
+					<h3 class="title">
 						Перфоратор BOSH BFG 6000
-					</div>
+					</h3>
 					<div class="price-ex">
 						30500 Р.
 					</div>
@@ -161,12 +161,12 @@
                     			<a href="#" class="btn buy">Купить</a>
                     			<a href="#" class="btn bookmark">В закладки</a>
                 			</div>
-					<div class="image">
+					<div class="img-wrapper">
 						<img src="img/bosh-bfg2000.jpg" width="220" height="160" alt="Перфоратор BOSH BFG 2000">
 					</div>
-					<div class="title">
+					<h3 class="title">
 						Перфоратор BOSH BFG 2000
-					</div>
+					</h3>
 					<div class="price-ex">
 					</div>
 					<div class="price">
@@ -175,7 +175,7 @@
 				</article>
 			</section>
 		</section>
-		<section class="popular container clearfix">
+		<section class="popular container">
 			<header class="popular-title clearfix">
 				<h2>Популярные производители</h2>
 				<a href="" class="btn-basic">Все производители</a>
@@ -207,62 +207,63 @@
 				</div>
 			</div>
 		</section>
-		<section class="services container clearfix">
-			<section class="services-exp">
+		<section class="services container">
+			<header class="services-exp">
 				<h2>Сервисы</h2>
 				<p>Хороший интернет-магазин отличается от плохого не только ценами!</p> 
 				<p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными</p>
-			</section>
-			<div class="service-item clearfix">
-				<section class="services-select">
+			</header>
+			<article class="service-item">
+				<div class="services-select">
 					<a href="" class="active">Доставка</a>
 					<a href="" >Гарантия</a>
 					<a href="">Кредит</a>
-				</section>
+				</div>
 				<section class="service-description">
 					<h2 class="service-title">Доставка</h2>
 					<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
 					<p>Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
 				</section>
-			</div>
-			<div class="service-item clearfix">
-				<section class="services-select">
+			</article>
+			<article class="service-item">
+				<div class="services-select">
 					<a href="#">Доставка</a>
 					<a href="#" class="active">Гарантия</a>
 					<a href="#">Кредит</a>
-				</section>
+				</div>
 				<section class="service-description">
 					<h2 class="service-title">Гарантия</h2>
 					<p>Если купленный у нас товар поломается или заискрит, 
 а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. </p>
 					<p>Дом уж восстановите как-нибудь сами.</p>
 				</section>
-			</div>
-			<div class="service-item clearfix">
-				<section class="services-select">
+			</article>
+			<article class="service-item">
+				<div class="services-select">
 					<a href="#">Доставка</a>
 					<a href="#">Гарантия</a>
 					<a href="#"  class="active">Кредит</a>
-				</section>
+				</div>
 				<section class="service-description">
 					<h2 class="service-title">Кредит</h2>
 					<p>Залезть в долговую яму стало проще!</p>
 					<p>Кредитные консультанты придут вам на помощь.</p>
 					<a href="#" class="btn-basic">Отправить заявку</a>
 				</section>
-			</div>
+			</article>
 		</section>
-		<section class="company container clearfix">
-			<section class="about-company">
+		<section class="company container">
+			<div class="about-company">
 				<h2>Компания "Техномарт"</h2>
 				<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
 				<p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
 					Техномарт работает со многими транспортными компаниями</p>
-				<p class="transp-campany">Деловые линии</p>
-				<p class="transp-campany">Автотрейдинг</p>
-				<p class="transp-campany">ЖелДорЭкспедиция</p>
+				<ul class="transp-campany">
+					<li>Деловые линии</li>
+					<li>Автотрейдинг</li>
+					<li>ЖелДорЭкспедиция</li>
 				<a href="" class="btn-basic">Подробнее о компании</a>
-			</section>
+			</div>
 			<section class="contacts">
 				<h2>Контакты</h2>
 				<p>Вы можете забрать товар сами, заехав в наш офис:</p>
@@ -270,7 +271,7 @@
 				<a href="" class="btn-dasic">Заблудились? Напишите нам!</a>			
 			</section>
 		</section>
-		<footer class="main-footer container clearfix">
+		<footer class="main-footer container">
 			<div class="footer-first-row clearfix">
 				<div class="logo">
 					<a href="#">Техномарт</a>
@@ -310,11 +311,11 @@
 				</div>
 				<div class="footer-email">
 					Обратная связь:
-					<a href="">mail@htmlacademy.ru</a>
+					<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
 				</div>
 				<div class="footer-develop">
 					Разработано - 
-					<a href="">htmlacademy.ru</a>
+					<a href="http://htmlacademy.ru">htmlacademy.ru</a>
 				</div>
 			</div>
 		</footer>

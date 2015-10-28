@@ -8,6 +8,11 @@ body{
 	width: 940px;
 	margin: auto;
 }
+.container::after{
+content: "";
+display:table;
+clear:both;
+}
 h2{
 	font-family: "Cuprum";
 	font-size: 30px;
@@ -174,6 +179,7 @@ float: right;
 .catalog-item{
 	float: left;
 	margin-right: 20px;
+	width: 220px;
 }
 .catalog-item:last-child{
 	margin-right: 0;
@@ -217,6 +223,11 @@ float: right;
 	padding-left: 20px;
 	margin-right: 80px;
 }
+.service-item:after{
+	content: "";
+	display: table;
+	clear: both;
+}
 
 /*company*/
 .about-company{
@@ -226,6 +237,11 @@ float: right;
 .about-company .contacts{
 	float: right;
 	width: 300px;
+}
+ul.transp-campany{
+	list-style: none;
+	padding:0;
+	margin:0;
 }
 
 /*popupwindow*/
@@ -302,7 +318,7 @@ ul.breadcrumbs-menu{
 	margin-bottom: 20px;
 }
 /*catalog-item*/
-.catalog-item:nth-child(3n)
+.right-column .catalog-item:nth-child(3n)
 {
 	margin-right: 0;
 	margin-bottom: 20px;
