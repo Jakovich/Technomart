@@ -182,10 +182,10 @@ h2.service-title{
 .info-block i{
 	margin-right: 13px;
 	margin-left: 15px;
-	color: #ffffff;
+	color: rgba(255,255,255,0.5);
 }
 .info-block:hover i{
-	color: rgba(255,255,255,0.5)
+	color: rgba(255,255,255,1)
 }
 .info-block:active i{
 	color: rgba(255,255,255,0.3)
@@ -197,11 +197,28 @@ h2.service-title{
 	background-color: #161d29;
 	color: rgba(255,255,255,0.6);
 }
-
-form.info-block{
-	width: 270px;
-	
+.info-block .full{
+	background-color: #ee3643;
 }
+form.info-block{
+	position: relative;
+	width: 270px;
+}
+.icon-search{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 8px;
+	left: -1px;
+}
+
+/*form.info-block::before{
+	position: absolute;
+	content: '🔍';;
+	color: rgba(255,255,255,0.3);
+	top: 8px;
+	left: 15px;
+}*/
 input[type="search"]{
 	color: #ffffff;
 	padding: 12px 0;
@@ -219,6 +236,10 @@ input[type="search"]:focus{
 	background-color: #ffffff;
 	color: #000000;
 }
+input[type="search"]:focus + .icon-search{
+	color: #ee3643;
+}
+
 .order{
 	float: right;
 	width: 150px;
@@ -277,9 +298,8 @@ input[type="search"]:focus{
 }
 .user-block{
 	width: 300px;
-	padding-left: 19px;
 	float: right;
-	text-align: right;
+	text-align: left;
 	font-size:0;
 }
 .user-block .login,
@@ -296,16 +316,31 @@ input[type="search"]:focus{
 	margin-left: 10px;
 }
 .user-block .login{
-	max-width: 100px;
+	width: 100px;
 	padding-left: 15px;
 }
 .user-block .logined{
-	max-width: 300px;
+	position: relative;
+	width: 215px;
+	padding-left: 45px;
+	padding-right: 40px;
+}
+.logined .icon-user{
+	font-size: 18px;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+.logined .icon-logout{
+	font-size: 18px;
+	position: absolute;
+	right: 10px;
+	top: 10px
 }
 .personal-navigation{
+	display: inline-block;
 	text-align: left;
 	max-width: 320px;
-	margin-left: 19px;
 	margin-top: 5px;
 }
 .personal-menu li{
@@ -894,7 +929,11 @@ content:"";
 .services p{
 	margin:0;
 }
-.services-select{
+
+ul.services-select{
+	list-style: none;
+	padding:0;
+	margin:0;
 	position: relative;
 	width: 220px;
 	float: left;
@@ -907,7 +946,7 @@ content:"";
 	position: relative;
 }
 .service-description p{
-	width: 300px;
+	width: 370px;
 }
 .service-description h2{
 	margin-top: 0;
@@ -925,35 +964,55 @@ content:"";
 	color: #ffffff;
 	background-color: #32425c;
 }
-.services-select .active{
+.services-select a:hover {
+	background-color: #293449;
+}
+.services-select .active a:hover{
+	background-color: #293449;
+	color:  #ffffff;
+}
+.services-select li:last-child a{
+	box-shadow: none;
+}
+
+.services-select .active a{
 	color: #32425c;
 	background-color: #ffffff;
 }
+
 .service-description::after{
 	z-index:2;
 	content: "";
 	position: absolute;
-	right:0;
-	top:20px;
+	right: 0;
+	top: 20px;
 	background-image: url(../img/sprite.png);
-    background-repeat: no-repeat;
-    display: block;
+	background-repeat: no-repeat;
+	display: block;
 	position: absolute;
 }
 .delivery .service-description::after{
 	width: 468px;
-    height: 261px;
+	height: 261px;
 	background-position: -5px -300px;
 }
 .garanty .service-description::after{
-	 width: 389px;
-    height: 283px;
-    background-position: -550px -5px;
+	right: 10px;
+	top: -5px;
+	width: 389px;
+	height: 283px;
+	background-position: -550px -5px;
 }
 .credit .service-description::after{
-	 width: 465px;
-    height: 285px;
-    background-position: -5px -5px;
+	right: -20px;
+	top: -5px;
+	width: 465px;
+	height: 285px;
+	background-position: -5px -5px;
+}
+.credit .btn-basic{
+	margin-top: 25px;
+	width: 195px;
 }
 
 .service-item:after{
@@ -961,7 +1020,23 @@ content:"";
 	display: table;
 	clear: both;
 }
-
+.garanty,
+.credit{
+	display: none;
+}
+.service-item{
+	position: relative;
+}
+.service-item:after{
+	content: "";
+	background: url("../img/separator-fon.png");
+	width: 10px;
+	height: 272px;
+	display: block;
+	position: absolute;
+	top:-45px;
+	left: 210px;
+}
 /*company*/
 .company{
 	margin-top: 45px;
@@ -1102,6 +1177,102 @@ ul.breadcrumbs-menu{
 }
 /*form select*/
 
+/*select-price*/
+.select fieldset{
+	border: none;
+	border-bottom: 1px solid #e5e5e5;
+	margin-bottom: 15px;
+	margin:0;
+	padding:0;
+	margin-bottom: 18px;
+}
+.select legend{
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.select .select-aliment{
+	border:none;
+}
+
+.range-controls {
+ 	position: relative;
+ 	height: 40px;
+	padding: 0 30px;
+ 	padding-top: 38px;
+	background-color:  #f7f3ec;
+	margin-bottom: 10px;
+}
+
+.range-controls .scale {
+	height: 2px;
+	background: #d7dcde;
+}
+
+.range-controls .bar {
+	width: 100%;
+	height: 2px;
+	background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 4px;
+  height: 4px;
+  cursor: pointer;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  background: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .toggle-min {
+  left: 30px;
+}
+
+.range-controls .toggle-max {
+  left: 170px;
+}
+
+.price-controls {
+	font-size: 0;
+	text-align: justify;
+}
+.price-controls .price-bar{
+	display: inline-block;
+	padding:0;
+	margin:0;
+}
+.price-controls::after{
+	display: inline-block;
+	visibility: hidden;
+	overflow: hidden;
+	width: 100%;
+	height: 0px;
+	content: "";
+}
+
+.price-controls input[type="text"]{
+	padding:0;
+	font-size: 17px;
+	line-height: 18px;
+	font-family: "PT Sans", "Arial", sans-serif;
+	display: inline-block;
+	width: 95px;
+	background-color: #f7f3ec;
+	padding: 10px 0;
+	text-align: center;
+	border: none;
+	border-radius: 5px;
+	  outline: none;
+}
+
+
 .select label{
 	display: block;
 	font-size: 15px;
@@ -1141,7 +1312,19 @@ ul.breadcrumbs-menu{
 	font-size: 10px;
 	color: #c1c1c1;
 	left: 7px;
-	top: 1.5px;
+	top: 2px;
+}
+.select button{
+	border: none;
+	background-color: #ffffff;
+	text-transform: uppercase;
+	font-family: "PT Sans";
+	font-size: 13px;
+	border: 1px solid #c1c1c1;
+	border-radius: 3px;
+	width: 140px;
+	padding: 10px;
+	margin-top: 40px;
 }
 
 
@@ -1151,10 +1334,11 @@ ul.breadcrumbs-menu{
 }
 .sort-title{
 	float: left;
+	width: 150px;
 }
 .sort-menu{
 	float: right;
-	margin-left: 40px;
+	margin-left: 55px;
 }
 .sort-menu a{
 	color: rgba(0,0,0,0.3);
@@ -1190,12 +1374,8 @@ ul.breadcrumbs-menu{
 	display: block;
 }
 
-/*perf-descr*/
-.perf-descr{
-	padding: 60px 0;
-	background-color: #f2f6f8;
-	margin-top: 60px;
-}
+
+/*paginator*/
 .paginator{
 	margin-top: 40px;
 	font-size: 0;
@@ -1228,6 +1408,19 @@ ul.breadcrumbs-menu{
 }
 .paginator .next{
 	width: 140px;
+}
+
+/*perf-descr*/
+.perf-descr{
+	padding: 60px 0;
+	background-color: #f2f6f8;
+	margin-top: 60px;
+}
+.perf-descr h2{
+	margin-bottom: 30px;
+	font-family: "Cuprum";
+	font-size: 30px;
+	font-weight: normal;
 }
 /*_____________________________*/
 /*popupwindow*/

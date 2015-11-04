@@ -5,6 +5,7 @@
 		<title>Техномарт: интернет-магазин строительных материалов и инструменты</title>
 		<meta name="keywords" content="Техномарт, магазин строительных материалов, инструменты для ремонта">
 		<link href='https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&subset=latin,cyrillic,latin-ext,cyrillic-ext' rel='stylesheet' type='text/css'>
+		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
@@ -12,10 +13,11 @@
 			<section class="header-first-row">
 				<div class="container">
 					<div class="logo">
-						<a href="">Техномарт</a>
+						<a href="index.html">Техномарт</a>
 					</div>
 					<form class="info-block search"> 
 						<input type="search" name="search" placeholder="Поиск:">
+						<i class="icon-search"></i>
 					</form>
 					<div class="info-block  bookmarks">
 						<a href=""><i class="icon-bookmark"></i>Закладки: 0</a>
@@ -44,9 +46,9 @@
 				</section>
 				<nav class="main-navigation">
 					<ul class="main-menu">
-						<li class="active"><a href="">Главная</a></li>
-						<li><a href="">Компания</a></li>
-						<li><a href="">Каталог</a></li>
+						<li class="active"><a href="index.html">Главная</a></li>
+						<li><a href="#">Компания</a></li>
+						<li><a href="catalog.html">Каталог</a></li>
 						<li><a href="">Новости</a></li>
 						<li><a href="">Спецпредложения</a></li>
 						<li><a href="">Доставка</a></li>
@@ -228,36 +230,35 @@
 					<p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными</p>
 				</header>
 				<article class="service-item delivery">
-					<div class="services-select">
-						<a href="#" class="active">Доставка</a>
-						<a href="#" >Гарантия</a>
-						<a href="#">Кредит</a>
-					</div>
+					<ul class="services-select">
+						<li  class="active"><a href="#">Доставка</a></li>
+						<li><a href="#" >Гарантия</a></li>
+						<li><a href="#">Кредит</a></li>
+					</ul>
 					<section class="service-description">
 						<h2 class="service-title">Доставка</h2>
-						<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
+						<p>Мы с удовольствием доставим ваш товар прямо к&nbsp;вашему&nbsp;подъезду совершенно бесплатно!</p>
 						<p>Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
 					</section>
 				</article>
 				<article class="service-item garanty">
-					<div class="services-select">
-						<a href="#">Доставка</a>
-						<a href="#" class="active">Гарантия</a>
-						<a href="#">Кредит</a>
-					</div>
+					<ul class="services-select">
+						<li><a href="#">Доставка</a></li>
+						<li  class="active"><a href="#">Гарантия</a></li>
+						<li><a href="#">Кредит</a></li>
+					</ul>
 					<section class="service-description">
 						<h2 class="service-title">Гарантия</h2>
-						<p>Если купленный у нас товар поломается или заискрит, 
-	а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. </p>
+						<p>Если купленный у нас товар поломается или заискрит,<br> а&nbsp;также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. </p>
 						<p>Дом уж восстановите как-нибудь сами.</p>
 					</section>
 				</article>
 				<article class="service-item credit">
-					<div class="services-select">
-					<a href="#">Доставка</a>
-					<a href="#">Гарантия</a>
-					<a href="#" class="active">Кредит</a>
-				</div>
+					<ul class="services-select">
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Гарантия</a></li>
+						<li class="active"><a href="#">Кредит</a></li>
+					</ul>
 				<section class="service-description">
 					<h2 class="service-title">Кредит</h2>
 					<p>Залезть в долговую яму стало проще!</p>
@@ -291,13 +292,13 @@
 			<div class="container">
 				<div class="footer-first-row clearfix">
 					<div class="logo">
-						<a href="#">Техномарт</a>
+						<a href="index.html">Техномарт</a>
 					</div>
 					<nav class="footer-nav footer-nav-1">
 						<ul class="footer-menu">
 							<li><a href="#">Компания</a></li>
 							<li><a href="#">Новости</a></li>
-							<li><a href="#">Каталог</a></li>
+							<li><a href="catalog.html">Каталог</a></li>
 							<li><a href="#">Доставка</a></li>
 							<li><a href="#">Контакты</a></li>
 						</ul>

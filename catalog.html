@@ -5,6 +5,7 @@
 		<title>Техномарт: интернет-магазин строительных материалов и инструменты</title>
 		<meta name="keywords" content="Техномарт, магазин строительных материалов, инструменты для ремонта">
 		<link href='https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&subset=latin,cyrillic,latin-ext,cyrillic-ext' rel='stylesheet' type='text/css'>
+		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
@@ -12,19 +13,20 @@
 			<section class="header-first-row">
 				<div class="container">
 					<div class="logo">
-						<a href="">Техномарт</a>
+						<a href="index.html">Техномарт</a>
 					</div>
 					<form class="info-block search">
 						<input type="search" name="search" placeholder="Поиск:">
+						<i class="icon-search"></i>
 					</form>
 					<div class="info-block  bookmarks">
 						<a href="#"><i class="icon-bookmark"></i>Закладки: 0</a>
 					</div>
 					<div class="info-block basket">
-						<a href="#"><i class="icon-basket"></i>Корзина: 10</a>
+						<a  class="full" href="#"><i class="icon-basket"></i>Корзина: 10</a>
 					</div>
 					<div class="order">
-						<a href="@">Оформить заказ</a>
+						<a href="#">Оформить заказ</a>
 					</div>
 				</div>
 			</section>
@@ -49,29 +51,27 @@
 				</section>
 				<nav class="main-navigation">
 					<ul class="main-menu">
-						<li><a href="">Главная</a></li>
-						<li><a href="">Компания</a></li>
-						<li  class="active"><a href="">Каталог</a></li>
-						<li><a href="">Новости</a></li>
-						<li><a href="">Спецпредложения</a></li>
-						<li><a href="">Доставка</a></li>
-						<li><a href="">Контакты</a></li>
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="#">Компания</a></li>
+						<li  class="active"><a href="catalog.html">Каталог</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Спецпредложения</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Контакты</a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
 		<div class="container">
 			<nav class="breadcrumbs">
-			<ul class="breadcrumbs-menu">
-				<li><a href="index.html"><i class="icon-home"></i></a></li>
-				<li><a href="catalog.html">Каталог</a></li>
-				<li><a href="#">Инструмент</a></li>
-				<li class="active"><a href="#">Перфораторы</a></li>
-			</ul>
-		</nav>
-			<header class="sector-title">
-			Перфораторы
-		</header>
+				<ul class="breadcrumbs-menu">
+					<li><a href="index.html"><i class="icon-home"></i></a></li>
+					<li><a href="catalog.html">Каталог</a></li>
+					<li><a href="#">Инструмент</a></li>
+					<li class="active"><a href="#">Перфораторы</a></li>
+				</ul>
+			</nav>
+			<header class="sector-title">Перфораторы</header>
 			<div class="left-column">
 				<div class="box">
 					Фильтр:
@@ -79,15 +79,17 @@
 				<form class="select" method="get" action="/">
 					<fieldset class="select-price">
 						<legend>Цена</legend>
-						<div class=" box box-select-price">
-							<input type="range" name="select-price" max="3000" min="0">
+						<div class="range-controls">
+					   		<div class="scale">
+						   		<div class="bar"></div>
+							</div>
+							<div class="toggle toggle-min"></div>
+							<div class="toggle toggle-max"></div>
 						</div>
-						<div class="box box-price">
-							0
-						</div>
-							-
-						<div class="box box-price">
-							30000
+						<div class="price-controls">
+							<label class="price-bar"><input name="min-price" type="text" value="0"></label>
+							<label class="price-bar">&mdash;</label>
+							<label class="price-bar"><input name="max-price" type="text" value="30000"></label>
 						</div>
 					</fieldset>
 					<fieldset class="select-producer">
@@ -118,13 +120,13 @@
 					<div class="sort-title">
 						Сортировка:
 					</div>
-					<div class="sort-menu"><a class="active" href="#">По цене</a></div>
-					<div class="sort-menu"><a href="#">По типу</a></div>
-					<div class="sort-menu"><a href="#">По функционалу</a></div>
 					<div class="sort-menu">
 						<a href="#" class="arrows active"><i class="icon-up-dir"></i></a>
 						<a href="#" class="arrows"><i class="icon-down-dir"></i></a>
 					</div>
+					<div class="sort-menu"><a href="#">По функционалу</a></div>
+					<div class="sort-menu"><a href="#">По типу</a></div>
+					<div class="sort-menu"><a class="active" href="#">По цене</a></div>
 				</div>
 				<section class="catalog-items clearfix">
 					<article class="catalog-item">
@@ -312,13 +314,13 @@
 			<div class="container">
 				<div class="footer-first-row clearfix">
 					<div class="logo">
-						<a href="#">Техномарт</a>
+						<a href="index.html">Техномарт</a>
 					</div>
 					<nav class="footer-nav footer-nav-1">
 						<ul class="footer-menu">
 							<li><a href="#">Компания</a></li>
 							<li><a href="#">Новости</a></li>
-							<li><a href="#">Каталог</a></li>
+							<li><a href="catalog.html">Каталог</a></li>
 							<li><a href="#">Доставка</a></li>
 							<li><a href="#">Контакты</a></li>
 						</ul>
