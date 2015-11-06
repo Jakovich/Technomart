@@ -82,10 +82,8 @@
 
 /*стили страницы*/
 body{
-	font-family: "PT Sans";
-	font-size: 13px;
+	font-family: "Cuprum", "Arial", sans-serif;
 	color: #000000;
-	line-height: 24px;
 	padding:0;
 	margin:0;
 }
@@ -107,21 +105,21 @@ clear: both;
 	display: table;
 	clear: both;
 }
-h2{
-	font-family: "Cuprum";
+.container h2{
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 30px;
 	text-transform: uppercase;
 	margin:0;
 	padding:0;
 }
-h3{
+.container h3{
 	font-size: 17px;
 	line-height: 30px;
 	text-transform: uppercase;
 	margin:0;
 }
 
-h2.service-title{
+.container h2.service-title{
 	font-size: 36px;
 	color: #32425c;
 }
@@ -129,7 +127,7 @@ h2.service-title{
 /*header-main*/
 .main-header{
 	background-color: #f1f5f7;
-	font-family: "Cuprum";
+	font-family: "Cuprum", "Arial", sans-serif;
 	color: #ffffff;
 	font-size: 17px;
 }
@@ -151,7 +149,7 @@ h2.service-title{
 	color: #ffffff;
 	display: block;
 	width: 220px;
-	padding: 10px 0;
+	padding: 9px 0;
 	font-size: 24px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -174,14 +172,13 @@ h2.service-title{
 }
 .info-block a{
 	display:block;
-	font-family: "Cuprum";
 	font-size: 17px;
 	line-height: 18px;
-	padding: 13px 0;
+	padding: 14px 0;
 }
 .info-block i{
 	margin-right: 13px;
-	margin-left: 15px;
+	margin-left: 14px;
 	color: rgba(255,255,255,0.5);
 }
 .info-block:hover i{
@@ -208,23 +205,15 @@ form.info-block{
 	content: "";
 	display: block;
 	position: absolute;
-	top: 8px;
+	top: 13px;
 	left: -1px;
 }
 
-/*form.info-block::before{
-	position: absolute;
-	content: '🔍';;
-	color: rgba(255,255,255,0.3);
-	top: 8px;
-	left: 15px;
-}*/
 input[type="search"]{
 	color: #ffffff;
-	padding: 12px 0;
+	padding: 12.5px 0;
 	margin:0;
-	padding-left: 40px;
-	font-family: "Cuprum";
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 17px;
 	line-height: 18px;
 	width: 270px;
@@ -246,10 +235,9 @@ input[type="search"]:focus + .icon-search{
 }
 .order a{
 	display:block;
-	font-family: "Cuprum";
 	font-size: 17px;
 	line-height: 18px;
-	padding: 13px 0;
+	padding: 14px 0;
 	text-align: center;
 	background-color: #63a63e;
 }
@@ -362,7 +350,6 @@ input[type="search"]:focus + .icon-search{
 }
 .personal-menu a{
 	color: #32425c;
-	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 18px;
 	display: inline-block;
@@ -380,7 +367,7 @@ input[type="search"]:focus + .icon-search{
 .login:hover i{
 	color: #32425c;
 }
-user-block a:active{
+.user-block a:active{
 	color: #b7bfc8;
 }
 /*main-navigation*/
@@ -414,7 +401,6 @@ ul.main-menu {
 /*footer*/
 /*first-row*/
 .main-footer{
-	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	background-color: #32425c;
@@ -544,7 +530,7 @@ margin-bottom:30px;
 /*btn*/
 .btn-basic{
 	display: inline-block;
-	font-family: "Cuprum";
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	text-align: center;
@@ -556,7 +542,7 @@ margin-bottom:30px;
 .btn-basic:hover{
 	background-color: #ca2c37;
 }
-.btn-basic:acrive{
+.btn-basic:active{
 	background-color: #ba2732;
 }
 /*_______________________________*/
@@ -565,8 +551,6 @@ margin-bottom:30px;
 /*categoires*/
 .categories{
 	margin-top: 60px;
-	font-family: "Cuprum", sans-serif;
-	
 }
 .category{
 	float: left;
@@ -742,7 +726,7 @@ margin-bottom:30px;
 	margin-bottom: 20px;
 }
 .popular-title h2{
-	margin-top: 7px;
+	margin-top:4px;
 	max-width: 590px;
 	float: left;
 	font-size: 30px;
@@ -755,7 +739,7 @@ margin-bottom:30px;
 	padding-right: 60px;
 }
 .catalog-item{
-	font-family: "PT Sans";
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-weight: bold;
 	position: relative;
 	float: left;
@@ -792,7 +776,6 @@ margin-bottom:30px;
 	height: 160px;
 }
 .catalog-item .title{
-	text-align: center;
 	text-transform: none;
 	font-size: 18px;
 	text-align: center;
@@ -823,7 +806,7 @@ margin-bottom:30px;
 	display: block;
 	width: 129px;
 	text-align: center;
-	font-family: "Cuprum", sans-serif;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 14px;
 	text-transform: uppercase;
 	padding: 7px 0;
@@ -859,9 +842,9 @@ margin-bottom:30px;
 	color: #ffffff;
 	font-size: 17px;
 	line-height: 20px;
-	font-family: "PT Sans";
+	font-family: "PT Sans", "Arial", sans-serif;
 	padding: 10px 0;
-	font-wight: bold;
+	font-weight: bold;
 	width: 140px;
 	margin: 0 auto;
 	margin-bottom: 20px;
@@ -917,7 +900,7 @@ content:"";
 
 .services h2,
 .company h2{
-	font-family: "Cuprum", sans-serif;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 30px;
 	font-weight: normal;
 	margin-top: 35px;
@@ -928,6 +911,9 @@ content:"";
 }
 .services p{
 	margin:0;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
 }
 
 ul.services-select{
@@ -947,6 +933,7 @@ ul.services-select{
 }
 .service-description p{
 	width: 370px;
+	
 }
 .service-description h2{
 	margin-top: 0;
@@ -956,7 +943,7 @@ ul.services-select{
 	display: block;
 	padding: 15px 0;
 	padding-left: 20px;
-	font-family: "Cuprum";
+	font-family: "Cuprum", "Arial", sans-serif;
 	box-shadow: inset 0 -1px 0 0 #293449;
 	font-size: 21px;
 	line-height: 30px;
@@ -989,7 +976,6 @@ ul.services-select{
 	background-image: url(../img/sprite.png);
 	background-repeat: no-repeat;
 	display: block;
-	position: absolute;
 }
 .delivery .service-description::after{
 	width: 468px;
@@ -1044,6 +1030,9 @@ ul.services-select{
 }
 .company p{
 	margin-bottom: 25px;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
 }
 .about-company{
 	float: left;
@@ -1132,6 +1121,7 @@ ul.breadcrumbs-menu{
 }
 .breadcrumbs-menu a{
 	color: #000000;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	text-transform: uppercase;
 }
@@ -1153,7 +1143,7 @@ ul.breadcrumbs-menu{
 	background-color: #f2f6f8;
 	padding: 30px 0;
 	padding-left: 30px;
-	font-family: "Cuprum";
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 30px;
 	text-transform: uppercase;
 	color: #32425c;
@@ -1173,6 +1163,9 @@ ul.breadcrumbs-menu{
 	background-color: #f7f3ec;
 	padding: 10px 15px;
 	margin-bottom: 20px;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
 	text-transform: uppercase;
 }
 /*form select*/
@@ -1181,13 +1174,12 @@ ul.breadcrumbs-menu{
 .select fieldset{
 	border: none;
 	border-bottom: 1px solid #e5e5e5;
-	margin-bottom: 15px;
+	font-family: "PT Sans", "Arial", sans-serif;
 	margin:0;
 	padding:0;
 	margin-bottom: 18px;
 }
 .select legend{
-	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 17px;
 	line-height: 30px;
 	font-weight: bold;
@@ -1258,7 +1250,6 @@ ul.breadcrumbs-menu{
 }
 
 .price-controls input[type="text"]{
-	padding:0;
 	font-size: 17px;
 	line-height: 18px;
 	font-family: "PT Sans", "Arial", sans-serif;
@@ -1269,7 +1260,7 @@ ul.breadcrumbs-menu{
 	text-align: center;
 	border: none;
 	border-radius: 5px;
-	  outline: none;
+	outline: none;
 }
 
 
@@ -1296,7 +1287,7 @@ ul.breadcrumbs-menu{
 .select-producer input:checked + label::before{
 	content: '\2611'; 
 }
-.select-aliment label::before{
+.select-element label::before{
 	content: '\25cb'; 
 	display: block;
 	position: absolute;
@@ -1305,20 +1296,19 @@ ul.breadcrumbs-menu{
 	font-size: 28px;
 	color: #c1c1c1;
 }
-.select-aliment input:checked + label::after{
+.select-element input:checked + label::after{
 	content: '\25cf';
 	position: absolute;
 	display: block;
 	font-size: 10px;
 	color: #c1c1c1;
-	left: 7px;
-	top: 2px;
+	left: 2.5%;
+	top: 8%;
 }
 .select button{
-	border: none;
 	background-color: #ffffff;
 	text-transform: uppercase;
-	font-family: "PT Sans";
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	border: 1px solid #c1c1c1;
 	border-radius: 3px;
@@ -1385,6 +1375,7 @@ ul.breadcrumbs-menu{
 	display: inline-block;
 	color: #000000;
 	vertical-align: top;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	height: 38px;
 	width: 38px;
@@ -1414,11 +1405,14 @@ ul.breadcrumbs-menu{
 .perf-descr{
 	padding: 60px 0;
 	background-color: #f2f6f8;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
 	margin-top: 60px;
 }
 .perf-descr h2{
 	margin-bottom: 30px;
-	font-family: "Cuprum";
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 30px;
 	font-weight: normal;
 }
