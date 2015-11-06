@@ -93,9 +93,9 @@ body{
 	margin: auto;
 }
 .container::after{
-content: "";
-display: table;
-clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 .container a{
 	text-decoration: none;
@@ -211,7 +211,7 @@ form.info-block{
 
 input[type="search"]{
 	color: #ffffff;
-	padding: 12.5px 0;
+	padding: 13px 0;
 	margin:0;
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 17px;
@@ -343,7 +343,7 @@ input[type="search"]:focus + .icon-search{
 	border: 2px solid #32425c;
 	border-radius: 50%;
 	top: 8px;
-	right: 0px;
+	right: 0;
 }
 .personal-menu li:last-child::after{
 	display: none;
@@ -578,8 +578,7 @@ margin-bottom:30px;
 .icon-wrapper i{
 	z-index: 20;
 	position: absolute;
-	background-image: url(../img/sprite.png);
-	background-repeat: no-repeat;
+	background: url(../img/sprite.png) no-repeat;
 	display: block;
 	top: 50%;
 	left:50%;
@@ -763,9 +762,7 @@ margin-bottom:30px;
 	right:0;
 	width: 60px;
 	height:60px;
-	background-image: url(../img/sprite.png);
-	background-repeat: no-repeat;
-	background-position: -480px -5px;
+	background-image: url(../img/sprite.png) no-repeat -480px -5px;
 	display: none;
 }
 .popular .catalog-item:nth-child(4) .flag-new{
@@ -1174,9 +1171,10 @@ ul.breadcrumbs-menu{
 .select fieldset{
 	border: none;
 	border-bottom: 1px solid #e5e5e5;
-	font-family: "PT Sans", "Arial", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;/*!!!!!!!!!!!!!!!!!!!!!!!!!*/
 	margin:0;
 	padding:0;
+	padding-bottom: 15px;
 	margin-bottom: 18px;
 }
 .select legend{
@@ -1213,7 +1211,7 @@ ul.breadcrumbs-menu{
 .range-controls .toggle {
   position: absolute;
   top: 30px;
-  left: 0px;
+  left: 0;
   width: 4px;
   height: 4px;
   cursor: pointer;
@@ -1245,7 +1243,7 @@ ul.breadcrumbs-menu{
 	visibility: hidden;
 	overflow: hidden;
 	width: 100%;
-	height: 0px;
+	height: 0;
 	content: "";
 }
 
