@@ -284,8 +284,8 @@
 			<section class="contacts">
 				<h2>Контакты</h2>
 				<p>Вы можете забрать товар сами, заехав в наш офис:</p>
-				<a href="#" class="map"><img src="img/map.jpg" width="300" height="158" alt="Карта с местоположением офиса"></a>
-				<a href="" class="btn-basic">Заблудились? Напишите нам!</a>			
+				<a href="#" class="map"><div id="yandex-map-small" class="map-small"></div></a>
+				<a href="" class="btn-basic lost">Заблудились? Напишите нам!</a>			
 			</section>
 		</section>
 		<footer class="main-footer">
@@ -342,7 +342,7 @@
 		</footer>
 
 		
-		<div class="modal-window">
+		<div class="modal-window modal-lost">
 			<div class="modal-close"></div>
 			<form action="/" method="post" class="write-us-form">
 				<fieldset class="modal-first-row">
@@ -365,7 +365,26 @@
 		
 		<div class="modal-window-map">
 			<div class="modal-close"></div>
+			<div id="yandex-map"></div>
 		</div>
+		
+		<div class="modal-window modal-basket">
+			<div class="modal-close"></div>
+			<div class="modal-first-row">
+				Товар добавлен в корзину!
+			</div>
+			
+			<div class="button-form">
+				<a class="btn-basic">Оформить заказ</a>
+				<a class="btn-basic btn-reset">Продолжить покупки</a>
+			</div>
+		</div>
+		<script src="js/lost.js"></script>
+		<script src="js/map.js"></script>
+		<script src="js/buy.js"></script>
+		
+		<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Saiq00_9rh6_GF0O8wFUXAz4xLBdVM8c&width=100%&height=100%&id=yandex-map-small&lang=ru_RU&sourceType=constructor"></script>
+		<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=zOwY8qcuy_6zJhKbjJMWlPxVWjpNVF6y&width=940&height=450&id=yandex-map&lang=ru_RU&sourceType=constructor"></script>
 	</body>
 </html>
 

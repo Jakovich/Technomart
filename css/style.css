@@ -917,6 +917,7 @@ content:"";
 	box-shadow: 0 0 20px -5px black;
 }
 .produser-item:active{
+	opacity: 0.3;
 }
 .produser-item img{
 	position: absolute;
@@ -1111,10 +1112,12 @@ ul.transp-campany{
 .contacts p{
 	width: 200px;
 }
-.contacts img{
+.contacts .map-small{
+	width: 300px;
+	height: 158px;
+	background: url("../img/map.jpg") no-repeat 0 0;
 	margin-top: 5px;
 	margin-bottom: 27px;
-	
 }
 .contacts .btn-basic{
 	padding-left:0; 
