@@ -2,6 +2,7 @@ var link = document.querySelector(".lost");
 var popupLost = document.querySelector(".modal-lost");
 var close = popupLost.querySelector(".modal-close");
 var btnReset =  popupLost.querySelector(".btn-reset");
+var storage = localStorage.getItem("login");
 link.addEventListener("click", function (event) {
 	event.preventDefault(); popupLost.classList.add("modal-window-show");
 });
