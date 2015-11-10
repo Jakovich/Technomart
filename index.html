@@ -237,43 +237,34 @@
 					<p>Хороший интернет-магазин отличается от плохого не только ценами!</p> 
 					<p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными</p>
 				</header>
-				<article class="service-item delivery">
+				<div class="services-slider">
+					<input type="radio" id="btn-serv-1" name="toggle-serv" checked>
+					<input type="radio" id="btn-serv-2" name="toggle-serv">
+					<input type="radio" id="btn-serv-3" name="toggle-serv">
 					<ul class="services-select">
-						<li  class="active"><a href="#">Доставка</a></li>
-						<li><a href="#" >Гарантия</a></li>
-						<li><a href="#">Кредит</a></li>
+						<li><label for="btn-serv-1">Доставка</label></li>
+						<li><label for="btn-serv-2">Гарантия</label></li>
+						<li><label for="btn-serv-3">Кредит</label></li>
 					</ul>
-					<section class="service-description">
-						<h2 class="service-title">Доставка</h2>
-						<p>Мы с удовольствием доставим ваш товар прямо к&nbsp;вашему&nbsp;подъезду совершенно бесплатно!</p>
-						<p>Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
-					</section>
-				</article>
-				<article class="service-item garanty">
-					<ul class="services-select">
-						<li><a href="#">Доставка</a></li>
-						<li  class="active"><a href="#">Гарантия</a></li>
-						<li><a href="#">Кредит</a></li>
-					</ul>
-					<section class="service-description">
-						<h2 class="service-title">Гарантия</h2>
-						<p>Если купленный у нас товар поломается или заискрит,<br> а&nbsp;также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. </p>
-						<p>Дом уж восстановите как-нибудь сами.</p>
-					</section>
-				</article>
-				<article class="service-item credit">
-					<ul class="services-select">
-						<li><a href="#">Доставка</a></li>
-						<li><a href="#">Гарантия</a></li>
-						<li class="active"><a href="#">Кредит</a></li>
-					</ul>
-				<section class="service-description">
-					<h2 class="service-title">Кредит</h2>
-					<p>Залезть в долговую яму стало проще!</p>
-					<p>Кредитные консультанты придут вам на помощь.</p>
-					<a href="#" class="btn-basic">Отправить заявку</a>
-				</section>
-			</article>
+					<div class="services-items clearfix">
+						<article class="service-item delivery">
+							<h2 class="service-title">Доставка</h2>
+							<p>Мы с удовольствием доставим ваш товар прямо к&nbsp;вашему&nbsp;подъезду совершенно бесплатно!</p>
+							<p>Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
+						</article>
+						<article class="service-item garanty">
+							<h2 class="service-title">Гарантия</h2>
+							<p>Если купленный у нас товар поломается или заискрит,<br> а&nbsp;также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. </p>
+							<p>Дом уж восстановите как-нибудь сами.</p>
+						</article>
+						<article class="service-item credit">
+							<h2 class="service-title">Кредит</h2>
+							<p>Залезть в долговую яму стало проще!</p>
+							<p>Кредитные консультанты придут вам на помощь.</p>
+							<a href="#" class="btn-basic">Отправить заявку</a>
+						</article>
+					</div>
+				</div>
 			</div>
 		</section>
 		<section class="company container">
@@ -392,7 +383,7 @@
 		<script src="js/lost.js"></script>
 		<script src="js/map.js"></script>
 		<script src="js/buy.js"></script>
-		
+
 		<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Saiq00_9rh6_GF0O8wFUXAz4xLBdVM8c&width=100%&height=100%&id=yandex-map-small&lang=ru_RU&sourceType=constructor"></script>
 		<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=zOwY8qcuy_6zJhKbjJMWlPxVWjpNVF6y&width=940&height=450&id=yandex-map&lang=ru_RU&sourceType=constructor"></script>
 	</body>
