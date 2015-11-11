@@ -248,7 +248,7 @@ input[type="search"]:focus + .icon-search{
 /*second-row*/
 .header-second-row{
 	padding-top: 45px;
-	padding-bottom: 40px;
+	padding-bottom: 39px;
 }
 .header-description{
 	color: #ee3643;
@@ -269,7 +269,7 @@ input[type="search"]:focus + .icon-search{
 	display: block;
 	font-size: 21px;
 	color: #e9292a;
-	padding-left:10px;
+	padding-left: 10px;
 	padding-right: 45px;
 	padding-top: 8px;
 	padding-bottom: 8px;
@@ -281,7 +281,7 @@ input[type="search"]:focus + .icon-search{
 }
 .header-contacts  p{
 	text-align: center;
-	margin:0;
+	margin: 0;
 	margin-top: 2px;
 	font-size: 14px;
 	line-height: 24px;
@@ -290,7 +290,7 @@ input[type="search"]:focus + .icon-search{
 .user-block{
 	width: 300px;
 	float: right;
-	text-align: left;
+	text-align: right;
 	font-size:0;
 }
 .user-block .login,
@@ -307,8 +307,7 @@ input[type="search"]:focus + .icon-search{
 	margin-left: 10px;
 }
 .user-block .login{
-	width: 100px;
-	padding-left: 15px;
+	padding-left: 10px;
 }
 
 .login i{
@@ -316,6 +315,7 @@ input[type="search"]:focus + .icon-search{
 	line-height: 25px;
 }
 .user-block .logined{
+	text-align: left;
 	position: relative;
 	width: 215px;
 	padding-top: 14px;
@@ -352,10 +352,7 @@ input[type="search"]:focus + .icon-search{
 .logined .icon-logout:hover{
  color: #32425c;
 }
-/*.logined .icon-user:hover,
-.logined .icon-logout:hover{
-	color: #32425c;
-}*/
+
 .logined .personal-page:active,
 .logined .icon-user:active,
 .logined .icon-logout:active{
@@ -372,6 +369,9 @@ input[type="search"]:focus + .icon-search{
 	color: #b7bfc8;
 }
 .personal-navigation{
+	float: left;
+}
+.personal-menu{
 	display: inline-block;
 	vertical-align: top;
 	text-align: left;
@@ -429,7 +429,7 @@ ul.main-menu {
 	display: block;
 	color: #ffffff;
 	font-size: 17px;
-	padding: 15px 30px;
+	padding: 17px 30px;
 }
 .main-menu a:hover{
 	background-color: #293449;
@@ -444,6 +444,7 @@ ul.main-menu {
 }
 .main-footer .logo a{
 	padding:20px 0;
+	font-size: 30px;
 }
 
 .footer-nav::after{
@@ -485,7 +486,7 @@ ul.footer-menu {
 	max-width: 580px;
 }
 .footer-first-row{
-margin-bottom:30px;
+margin-bottom: 30px;
 }
 
 /*second-row*/
@@ -579,6 +580,7 @@ margin-bottom:30px;
 	text-align: center;
 	text-transform: uppercase;
 	padding: 10px 20px;
+	border-radius: 3px;
 	color: #ffffff;
 	background-color: #ee3643;
 }
@@ -605,7 +607,7 @@ margin-bottom:30px;
 
 .category::after{
 	content: "";
-	clear:both;
+	clear: both;
 	display: table;
 }
 
@@ -614,8 +616,8 @@ margin-bottom:30px;
 	position: absolute;
 	width: 140px;
 	height: 123px;
-	top:0;
-	right:0;
+	top: 0;
+	right: 0;
 }
 
 .icon-wrapper i{
@@ -624,7 +626,7 @@ margin-bottom:30px;
 	background: url(../img/sprite.png) no-repeat;
 	display: block;
 	top: 50%;
-	left:50%;
+	left: 50%;
 	transform: translate(-50%, -50%);
 }
 .category:nth-child(1),
@@ -636,7 +638,7 @@ margin-bottom:30px;
 	font-size: 24px;
 	font-weight: bold;
 	margin-left: 20px;
-	margin-bottom: 13px;
+	margin-bottom: 17px;
 }
 .category a{
 	display: block;
@@ -646,8 +648,8 @@ margin-bottom:30px;
 	width: 135px;
 	font-size: 14px;
 	text-transform: uppercase;
-	padding-top: 7px;
-	padding-bottom: 7px;
+	padding-top: 9px;
+	padding-bottom: 9px;
 	background-color: rgba(0,0,0,0.1);
 }
 .category a:hover{
@@ -708,6 +710,7 @@ margin-bottom:30px;
 	height: 265px;
 	margin-right: 20px;
 	color: #ffffff;
+	margin-bottom: 50px;
 	
 }
 .adv-slider .arrows {
@@ -718,6 +721,7 @@ margin-bottom:30px;
 	z-index: 40;
 	font-size: 45px;
 }
+
 .adv-slider .arrows-right{
 	float: right;
 	cursor:pointer;
@@ -835,9 +839,10 @@ margin-bottom:30px;
 	background-color: #f7f3ec;
 	color: #32425c;
 	padding: 25px 25px;
-	margin-top: 30px;
+	margin-top: 0;
 	margin-bottom: 20px;
 }
+
 .popular-title h2{
 	margin-top:4px;
 	max-width: 590px;
@@ -846,10 +851,11 @@ margin-bottom:30px;
 	font-weight: normal;
 }
 .popular-title .btn-basic{
+	min-width: 153px;
 	max-width: 275px;
 	float: right;
-	padding-left: 60px;
-	padding-right: 60px;
+	padding-left: 50px;
+	padding-right: 50px;
 }
 .catalog-item{
 	font-family: "PT Sans", "Arial", sans-serif;
@@ -1008,6 +1014,7 @@ margin-bottom:30px;
 	background-color: #f2f6f8;
 	padding-top: 30px; 
 	padding-bottom: 100px;
+	margin-top: 65px;
 }
 
 .services h2,
@@ -1016,7 +1023,7 @@ margin-bottom:30px;
 	font-size: 30px;
 	font-weight: normal;
 	margin-top: 35px;
-	margin-bottom: 25px;
+	margin-bottom: 24px;
 }
 .services-exp{
 	margin-bottom: 70px;
@@ -1033,7 +1040,7 @@ ul.services-select{
 	padding:0;
 	margin:0;
 	position: relative;
-	width: 220px;
+	width: 240px;
 	float: left;
 	z-index: 100;
 	margin-right: 80px;
@@ -1071,16 +1078,16 @@ ul.services-select{
 .services-items{
 	position: relative;
 }
-.service-items:after{
+.services-items::after{
 	content: "";
 	background: url("../img/separator-fon.png");
 	width: 10px;
 	height: 272px;
 	display: block;
 	position: absolute;
-	z-index: 40;
-	top:10px;
-	left: 10px;
+	z-index: 200;
+	top:-48px;
+	left: 230px;
 }
 .service-item{
 	z-index:5;
@@ -1154,7 +1161,7 @@ ul.services-select{
 	margin-bottom: 85px;
 }
 .company p{
-	margin-bottom: 25px;
+	margin-bottom: 23px;
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 24px;
@@ -1180,7 +1187,7 @@ ul.transp-campany{
 }
 .transp-campany li{
 	position: relative;
-	margin-bottom: 15px;
+	margin-bottom: 17px;
 }
 .transp-campany li::before{
 	content: "";
@@ -1194,7 +1201,7 @@ ul.transp-campany{
 }
 .about-company .btn-basic{
 	margin-top: 20px;
-	width: 220px;
+	width: 180px;
 }
 .contacts p{
 	width: 200px;
@@ -1209,6 +1216,7 @@ ul.transp-campany{
 .contacts .btn-basic{
 	padding-left:0; 
 	padding-right: 0;
+	margin-top: 45px;
 	text-align: center;
 	display: block;
 	width: 100%;
@@ -1243,7 +1251,6 @@ ul.breadcrumbs-menu{
 }
 .breadcrumbs-menu li{
 	position: relative;
-	font-size: 13px;
 	display: inline-block;
 	vertical-align: top;
 	padding-right: 34px;
@@ -1252,6 +1259,8 @@ ul.breadcrumbs-menu{
 	color: #000000;
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
+	line-height: 18px;
+	letter-spacing: 1px;
 	text-transform: uppercase;
 }
 .breadcrumbs-menu li:first-child a{
@@ -1270,7 +1279,7 @@ ul.breadcrumbs-menu{
 
 .sector-title{
 	background-color: #f2f6f8;
-	padding: 30px 0;
+	padding: 28px 0;
 	padding-left: 30px;
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 30px;
@@ -1303,17 +1312,21 @@ ul.breadcrumbs-menu{
 .select fieldset{
 	border: none;
 	border-bottom: 1px solid #e5e5e5;
-	font-family: "PT Sans", "Arial", sans-serif;/*!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	font-family: "PT Sans", "Arial", sans-serif;
 	margin:0;
 	padding:0;
 	padding-bottom: 15px;
 	margin-bottom: 18px;
+}
+.select .select-element{
+	border: none;
 }
 .select legend{
 	font-size: 17px;
 	line-height: 30px;
 	font-weight: bold;
 	text-transform: uppercase;
+	margin-top: -5px;
 	margin-bottom: 10px;
 }
 .select .select-aliment{
@@ -1364,6 +1377,8 @@ ul.breadcrumbs-menu{
 .price-controls {
 	font-size: 0;
 	text-align: justify;
+	padding-bottom: 10px;
+	margin-bottom: 5px;
 }
 .price-controls .price-bar{
 	display: inline-block;
@@ -1400,7 +1415,7 @@ ul.breadcrumbs-menu{
 	font-size: 15px;
 	line-height: 20px;
 	text-transform: uppercase;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 	padding-left: 35px;
 	position: relative;
 }
@@ -1423,18 +1438,18 @@ ul.breadcrumbs-menu{
 	display: block;
 	position: absolute;
 	left:0;
-	top:0;
-	font-size: 28px;
+	top:-4px;
+	font-size: 35px;
 	color: #c1c1c1;
 }
 .select-element input:checked + label::after{
 	content: '\25cf';
 	position: absolute;
 	display: block;
-	font-size: 10px;
+	font-size: 15px;
 	color: #c1c1c1;
-	left: 2.5%;
-	top: 8%;
+	left: 3%;
+	bottom: 15%;
 }
 .select button{
 	background-color: #ffffff;
@@ -1445,7 +1460,7 @@ ul.breadcrumbs-menu{
 	border-radius: 3px;
 	width: 140px;
 	padding: 10px;
-	margin-top: 40px;
+	margin-top: 25px;
 	cursor: pointer;
 }
 
@@ -1453,6 +1468,7 @@ ul.breadcrumbs-menu{
 /*sorting*/
 .right-column .box{
 	padding-bottom: 3px;
+	padding-right: 0;
 }
 .sort-title{
 	float: left;
@@ -1460,8 +1476,9 @@ ul.breadcrumbs-menu{
 }
 .sort-menu{
 	float: right;
-	margin-left: 55px;
+	margin-left: 60px;
 }
+
 .sort-menu a{
 	color: rgba(0,0,0,0.3);
 	border-bottom: 1px dashed #ee3643;
@@ -1499,7 +1516,7 @@ ul.breadcrumbs-menu{
 
 /*paginator*/
 .paginator{
-	margin-top: 40px;
+	margin-top: 35px;
 	font-size: 0;
 }
 .paginator a{
@@ -1535,7 +1552,8 @@ ul.breadcrumbs-menu{
 
 /*perf-descr*/
 .perf-descr{
-	padding: 60px 0;
+	padding-top: 65px;
+	padding-bottom: 55px;
 	background-color: #f2f6f8;
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
@@ -1708,7 +1726,7 @@ ul.breadcrumbs-menu{
 	display: block;
 	position: absolute;
 	top: 25px;
-	left:75px;
+	left: 75px;
 	width: 80px;
 	height: 80px;
 	background-image: url("../img/sprite.png");

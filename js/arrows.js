@@ -5,9 +5,16 @@ var arrowRight = document.querySelector(".arrows-right");
 			var btn2 = document.getElementById("btn-2");
 			arrowLeft.addEventListener("click", function (event){
 				console.log("Done;");
-				btn2.setAttribute("checked", "");
+				if(btn1.hasAttribute('checked')){
+					console.log("yesbtn1");
+					btn1.removeAttribute('checked');
+					btn2.setAttributeAttribute('checked')
+				}
+				else{console.log("yesbtn2");
+				     btn2.removeAttribute('checked');
+					btn1.setAttributeAttribute('checked')
+				}
+				
 			});
-			arrowRight.addEventListener("click", function (event){
-				console.log("Done;")
-			});
+		
 	
