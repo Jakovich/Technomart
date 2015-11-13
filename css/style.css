@@ -1,5 +1,4 @@
-/*иконочный щрифт*/
-@charset "UTF-8";
+@charset "UTF-8"; 
 
  @font-face {
   font-family: 'symbols-technomart';
@@ -1318,6 +1317,7 @@ ul.breadcrumbs-menu{
 	padding-bottom: 15px;
 	margin-bottom: 18px;
 }
+
 .select .select-element{
 	border: none;
 }
@@ -1672,7 +1672,6 @@ ul.breadcrumbs-menu{
 	left: 50%;
 	margin-left: -470px;
 	margin-top: -225px;
-	box-shadow: 0 0 50px rgba(0,0,0,0.8);
 	width: 940px;
 	height: 450px;
 	background: url("../img/big-map.jpg") no-repeat 0 0;
@@ -1684,16 +1683,16 @@ ul.breadcrumbs-menu{
 	right: 0;
 }
 @keyframes opacity{
-	0%{opacity: 0};
-	50%{opacity: 0.5};
-	100%{opacity: 1};
+	0% {opacity: 0;}
+	50% {opacity: 0.5;}
+	100% {opacity: 1;}
 }
 
 @keyframes move{
-	0%{transform: translateX(-1000px);}
-	70%{transform: translateX(30px)}
-	90%{transform: translateX(-20px)}
-	100%{transform: translateX(0)}
+	0% {transform: translateX(-1000px);}
+	70% {transform: translateX(30px)}
+	90% {transform: translateX(-20px)}
+	100% {transform: translateX(0)}
 }
 @keyframes error{
 	to {transform: rotate(380deg)}
