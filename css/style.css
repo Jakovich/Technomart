@@ -215,7 +215,7 @@ input[type="search"]{
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 17px;
 	line-height: 18px;
-	width: 270px;
+	width: 223px;
 	padding-left: 47px;
 	background-color: #293449;
 	border: none;
@@ -1475,12 +1475,21 @@ ul.breadcrumbs-menu{
 	float: left;
 	width: 150px;
 }
+
+.sort-menu{
+	float: right;
+	width: 500px;
+}
+
 .sort-menu .menu-item{
 	float: right;
-	margin-left: 70px;
+	margin-left: 68px;
 }
 .sort-menu .menu-item:first-child{
-	margin-left: 40px;
+	margin-left: 38px;
+}
+.sort-menu .menu-item:last-child{
+	margin-left: 0;
 }
 .menu-item a{
 	color: rgba(0,0,0,0.3);
