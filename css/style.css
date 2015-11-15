@@ -83,8 +83,8 @@
 body {
 	font-family: "Cuprum", "Arial", sans-serif;
 	color: #000000;
-	padding:0;
-	margin:0;
+	padding: 0;
+	margin: 0;
 	min-width: 960px;
 }
 
@@ -154,7 +154,7 @@ img {
 }
 
 .logo {
-	position:relative;
+	position: relative;
 	float: left;	
 	text-align: center;
 	background-color: #ee3643;
@@ -276,7 +276,7 @@ input[type="search"]:focus + .icon-search {
 	background-color: #5fbb2d;
 }
 
-.order a:active{
+.order a:active {
 	background-color: #518534;
 	color: rgba(255,255,255,0.5);
 }
@@ -305,7 +305,7 @@ input[type="search"]:focus + .icon-search {
 	float: left;
 }
 
-.header-contacts .phone a {
+.phone a {
 	display: block;
 	font-size: 21px;
 	color: #e9292a;
@@ -316,7 +316,7 @@ input[type="search"]:focus + .icon-search {
 	border: 3px solid #ffffff;
 }
 
-.header-contacts .phone i {
+.phone i {
 	margin-right: 35px;
 	color: #b7bfc8;
 }
@@ -374,7 +374,7 @@ input[type="search"]:focus + .icon-search {
 	background-color: #ffffff;
 }
 
-.user-block .logined a {
+.logined a {
 	color: #000000;
 }
 
@@ -421,6 +421,9 @@ input[type="search"]:focus + .icon-search {
 }
 
 .user-block a:active {
+	color: #b7bfc8;
+}
+.login:active i {
 	color: #b7bfc8;
 }
 
@@ -515,7 +518,7 @@ ul.main-menu {
 }
 
 .main-footer .logo a {
-	padding:20px 0;
+	padding: 20px 0;
 	font-size: 30px;
 }
 
@@ -699,7 +702,7 @@ ul.footer-menu {
 .category {
 	float: left;
 	width: 300px;
-	height: 123px;
+	min-height: 123px;
 	margin-bottom: 20px;
 	position: relative;
 }
@@ -740,6 +743,7 @@ ul.footer-menu {
 	font-weight: bold;
 	margin-left: 21px;
 	margin-bottom: 15px;
+	width: 135px;
 }
 
 .category a {
@@ -753,6 +757,7 @@ ul.footer-menu {
 	padding-top: 11px;
 	padding-bottom: 11px;
 	background-color: rgba(0,0,0,0.1);
+	margin-bottom: 15px;
 }
 
 .category a:hover {
@@ -782,9 +787,9 @@ ul.footer-menu {
 }
 
 .category-instrument .icon {
-	 width: 75px;
-    height: 61px;
-    background-position: -949px -78px;
+	width: 75px;
+	height: 61px;
+	background-position: -949px -78px;
 }
 
 .category-technic {
@@ -983,12 +988,16 @@ ul.footer-menu {
 	padding-left: 50px;
 	padding-right: 50px;
 }
+.catalog-items {
+	font-size: 0;
+}
 
 .catalog-item {
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-weight: bold;
 	position: relative;
-	float: left;
+	display: inline-block;
+	vertical-align: top;
 	margin-bottom: 20px;
 	margin-right: 20px;
 	width: 218px;
@@ -1018,7 +1027,7 @@ ul.footer-menu {
 }
 
 .popular .catalog-item:nth-child(4) .flag-new {
-	display:block;
+	display: block;
 }
 
 .catalog-item .img-wrapper {
@@ -1076,7 +1085,8 @@ ul.footer-menu {
 	position: relative;
 	margin-bottom: 7px;
 }
-.actions .buy .icon-basket {
+
+.buy .icon-basket {
 	position: absolute;
 	font-size: 17px;
 	left: 7px;
@@ -1090,7 +1100,7 @@ ul.footer-menu {
 	border-bottom-color: #367315;
 }
 
-.actions .buy:hover .icon-basket {
+.buy:hover .icon-basket {
 	color: rgba(255,255,255,1);
 }
 
